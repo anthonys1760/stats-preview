@@ -74,8 +74,31 @@
     }
 
     img {
-      filter: sepia(100%);
+     
+      
     }
+    
+    .box-2:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(125, 2, 150, 0.5);
+      transition: background .3s linear;
+}
+
+    .box-2 {
+      position: relative;
+      float: left;
+      cursor: pointer;
+}
+
+
+
+
 
 
 
