@@ -32,6 +32,7 @@
     body {
       margin: 0;
       background: var(--main);
+      overflow: none;
     }
 
     p,
@@ -45,9 +46,10 @@
     }
 
     .flexBox-1 {
+      border-radius: 3px;
       display: flex;
       justify-content: center;
-      gap: 100px;
+      gap: 50px;
       background: var(--card);
       width: 500px;
       position: relative;
@@ -58,6 +60,7 @@
     .flexBox-2 {
       display: flex;
       gap: 80px;
+      padding-top: 50px;
     }
 
     .details {
@@ -93,6 +96,7 @@
       font-size: 18px;
       top: 300px;
       color: var(--white);
+      padding: 15px;
     }
     
 
@@ -105,7 +109,11 @@
 @media only screen and (max-width: 600px) {
 
   .box-1 {
+    position: relative;
+    bottom: 40px;
     margin-top: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .flexBox-1 {
     display: flex;
@@ -118,11 +126,53 @@
   }
 
   .box-1 {
-    width: 100%;
     flex-basis: 0;
-    padding: 10px;
-    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 0;
   }
+
+  .flexBox-2 {
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    left: 150px;
+  }
+
+  .details {
+    text-align: center;
+    position: relative;
+    right: 60px;
+  }
+
+  .detail-1 {
+    position: relative;
+    text-align: center;
+    right: 210px;
+  }
+
+  .detail-2 {
+    position: relative;
+    text-align: center;
+    right: 210px;
+  }
+
+  .detail-3 {
+    position: relative;
+    text-align: center;
+    right: 210px;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    right: 60px;
+  }
+
+  .attribution {
+    top: 20px;
+  }
+
+
 }
 
   </style>
