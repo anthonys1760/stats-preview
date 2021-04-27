@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -25,13 +26,12 @@
       --white: #ffffff;
       --main: hsl(233, 47%, 7%);
       --violet: hsl(277, 64%, 61%);
-      --card: hsl(244, 38%, 16%)
+      --card: hsl(244, 38%, 16%);
     }
 
     body {
-      
-     margin: 0;
-     background: var(--main);
+      margin: 0;
+      background: var(--main);
     }
 
     p,
@@ -52,7 +52,7 @@
       width: 500px;
       position: relative;
       margin: 0 auto;
-      
+      top: 250px
     }
 
     .flexBox-2 {
@@ -69,15 +69,6 @@
       flex-basis: auto;
     }
 
-    p span {
-      
-    }
-
-    img {
-     
-      
-    }
-    
     .box-2:before {
       content: "";
       display: block;
@@ -88,24 +79,51 @@
       right: 0;
       background: rgba(125, 2, 150, 0.5);
       transition: background .3s linear;
-}
+    }
 
     .box-2 {
       position: relative;
       float: left;
       cursor: pointer;
-}
-
-
-
-
-
-
+    }
 
     .attribution {
-      margin-top: 100px;
+      /* margin-top: 100px; */
+      position: relative;
+      font-size: 18px;
+      top: 300px;
       color: var(--white);
     }
+    
+
+    @media only screen and (min-width: 768px) {
+  /* For desktop: */
+ 
+}
+
+/* This means anything under 600px will be applied */
+@media only screen and (max-width: 600px) {
+
+  .box-1 {
+    margin-top: -0px;
+  }
+  .flexBox-1 {
+    display: block;
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  .box-1 {
+    width: 100%;
+    flex-basis: 0;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
   </style>
 </head>
 
@@ -115,17 +133,21 @@
 
     <div class="box-1">
       <h1>Get <span style="color: var(--violet)">insights</span> that help<br> your business grow.</h1>
-      <p class="details">Discover the benefits of data analytics and make<br> better decisions regarding revenue, customer <br>
+      <p class="details">Discover the benefits of data analytics and make<br> better decisions regarding revenue,
+        customer <br>
         experience, and overall efficiency.</p>
       <div class="flexBox-2">
         <div class="detail-1">
-          <p><span style="font-size: 24px; font-weight: 900;">10k +</span><br><span style="color: grey">Companies</span></p>
+          <p><span style="font-size: 24px; font-weight: 900;">10k +</span><br><span style="color: grey">Companies</span>
+          </p>
         </div>
         <div class="detail-2">
-          <p><span style="font-size: 24px; font-weight: 900;">314</span><br><span style="color: grey">Templates</span></p>
+          <p><span style="font-size: 24px; font-weight: 900;">314</span><br><span style="color: grey">Templates</span>
+          </p>
         </div>
         <div class="detail-3">
-          <p><span style="font-size: 24px; font-weight: 900;">12M+</span><br><span style="color: grey">Queries</span></p>
+          <p><span style="font-size: 24px; font-weight: 900;">12M+</span><br><span style="color: grey">Queries</span>
+          </p>
         </div>
       </div>
     </div>
