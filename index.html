@@ -1,53 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
 
     :root {
       --white: #ffffff;
       --main: hsl(233, 47%, 7%);
+      --violet: hsl(277, 64%, 61%);
+      --card: hsl(244, 38%, 16%)
     }
 
     body {
-      background-color: var(--main);
-      padding: 70px;
+      
+     margin: 0;
+     background: var(--main);
     }
 
-    p, h1 {
+    p,
+    h1 {
       color: var(--white);
     }
 
-    .section {
+    .box-1 {
+      background: var(--card);
+      padding: 50px;
+    }
+
+    .flexBox-1 {
       display: flex;
+      justify-content: center;
+      gap: 100px;
+      background: var(--card);
+      width: 500px;
+      position: relative;
+      margin: 0 auto;
+      
+    }
+
+    .flexBox-2 {
+      display: flex;
+      gap: 80px;
+    }
+
+    .details {
+      color: grey;
+      line-height: 25px;
+    }
+
+    .box-1 {
+      flex-basis: auto;
+    }
+
+    p span {
+      
+    }
+
+    img {
+      filter: sepia(100%);
+    }
+
+
+
+    .attribution {
+      margin-top: 100px;
+      color: var(--white);
     }
   </style>
 </head>
+
 <body>
 
-  <div class="section">
+  <div class="flexBox-1">
+
     <div class="box-1">
-      <h1>Get insights that help your business grow.</h1>
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.</p>
+      <h1>Get <span style="color: var(--violet)">insights</span> that help<br> your business grow.</h1>
+      <p class="details">Discover the benefits of data analytics and make<br> better decisions regarding revenue, customer <br>
+        experience, and overall efficiency.</p>
+      <div class="flexBox-2">
+        <div class="detail-1">
+          <p><span style="font-size: 24px; font-weight: 900;">10k +</span><br><span style="color: grey">Companies</span></p>
+        </div>
+        <div class="detail-2">
+          <p><span style="font-size: 24px; font-weight: 900;">314</span><br><span style="color: grey">Templates</span></p>
+        </div>
+        <div class="detail-3">
+          <p><span style="font-size: 24px; font-weight: 900;">12M+</span><br><span style="color: grey">Queries</span></p>
+        </div>
+      </div>
     </div>
+
+
+
     <div class="box-2">
       <img src="images/image-header-desktop.jpg">
     </div>
+
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Anthony Smith</a>.
   </div>
 </body>
+
 </html>
